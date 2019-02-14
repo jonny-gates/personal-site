@@ -3,8 +3,32 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+@import 'https://fonts.googleapis.com/css?family=Lato:300,400,700|Source+Code+Pro:300,400,700';
+@import 'components/buttons.css';
+@import 'components/layouts.css';
+@import 'components/cards.css';
 
+body {
+  font-family: 'Lato', sans-serif;
+  background-image: url('../img/bg-graffiti.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
 
+h1, h2, h3 {
+  font-family: 'Source Code Pro', monospace;
+}
+
+.full-height {
+  height: 100vh;
+  background-color: #fafafa;
+}
+
+.ruby-icon {
+  height: 100px;
+  width: 100px;
+}
 
 
 

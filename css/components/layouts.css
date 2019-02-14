@@ -1,0 +1,8 @@
+.section {
+  height: 200px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}

@@ -1,0 +1,28 @@
+.btn-transparent {
+  color: #000;
+  border: 2px solid #000;
+  border-radius: 0;
+  padding: 16px 24px;
+  transition: 0.3s;
+}
+
+.btn-transparent:hover {
+  color: #000;
+  opacity: 0.4;
+}
+
+.btn-blue {
+  border-radius: 0;
+  background: #65c6c4;
+  color: #fff;
+  padding: 16px 24px;
+  text-align: center;
+  display: block;
+  transition: 0.3s;
+}
+
+.btn-blue:hover {
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.7;
+}

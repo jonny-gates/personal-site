@@ -1,0 +1,37 @@
+.card {
+  border: 2px solid #000;
+  border-radius: 0;
+  margin: 8px;
+  /*height: 250px;*/
+  display: flex;
+  /*flex-flow: column;
+  align-items: space-between;*/
+}
+
+.card-img {
+  height: 150px;
+  background-size: cover;
+  padding: 8px;
+  border-radius: 0;
+
+}
+
+.card p {
+  text-align: center;
+  font-size: 14px;
+  font-weight: lighter;
+
+}
+
+.card-content {
+  padding: 8px;
+  flex-grow: 1;
+}
+
+.card a {
+  margin: 8px;
+}
+
+/*.card a {
+  align-self: flex-end;
+}*/
