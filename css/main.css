@@ -4,9 +4,12 @@
    Author's custom styles
    ========================================================================== */
 @import 'https://fonts.googleapis.com/css?family=Lato:300,400,700|Source+Code+Pro:300,400,700';
+@import 'https://use.fontawesome.com/releases/v5.7.2/css/all.css';
 @import 'components/buttons.css';
 @import 'components/layouts.css';
 @import 'components/cards.css';
+@import 'components/social.css';
+
 
 body {
   font-family: 'Lato', sans-serif;
@@ -28,6 +31,7 @@ h1, h2, h3 {
 .ruby-icon {
   height: 100px;
   width: 100px;
+  margin: 0 auto;
 }
 
 

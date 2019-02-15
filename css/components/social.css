@@ -1,0 +1,20 @@
+.social-box {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  background: #65c6c4;
+  padding: 8px 24px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.social-box a {
+  color: #fff;
+  font-size: 32px;
+  margin: 0 8px;
+  transition: 0.3s;
+}
+
+.social-box a:hover {
+  opacity: 0.6;
+}
