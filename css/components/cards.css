@@ -1,9 +1,11 @@
 .card {
-  border: 2px solid #000;
+  /*border: 2px solid #000;*/
   border-radius: 0;
   margin: 8px;
+  padding: 8px;
   /*height: 250px;*/
   display: flex;
+  border: none;
   /*flex-flow: column;
   align-items: space-between;*/
 }
@@ -29,7 +31,7 @@
 }
 
 .card a {
-  margin: 8px;
+  /*margin: 8px;*/
 }
 
 /*.card a {

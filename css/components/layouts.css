@@ -1,5 +1,10 @@
-.section {
+.jg-spacer {
   height: 200px;
+}
+
+.jg-section {
+  background-color: #fafafa;
+  padding: 24px 0;
 }
 
 .card-grid {
@@ -7,6 +12,14 @@
   grid-template-columns: auto auto auto;
 }
 
+.footer {
+  background: #FACD49;
+  padding: 24px 0;
+}
+
+.footer h2 {
+  color: #fff;
+}
 /*@media  (max-width : 480px) {
   .card-grid {
     grid-template-columns: auto;

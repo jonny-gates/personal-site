@@ -23,6 +23,10 @@ h1, h2, h3 {
   font-family: 'Source Code Pro', monospace;
 }
 
+h3 {
+  font-size: 22px;
+}
+
 .full-height {
   height: 100vh;
   background-color: #fafafa;
