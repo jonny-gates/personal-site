@@ -34,7 +34,21 @@
 
 .grid-item {
   padding: 16px;
+  display: flex;
+  align-items: center;
 }
+
+.grid-item-img {
+  margin: 16px;
+  background-size: cover;
+  min-height: 280px;
+}
+
+.grid-item img {
+  width: 100%;
+  margin: 0 auto;
+  object-fit: cover;
+ }
 
 .click-desc {
   grid-area: click-desc;
