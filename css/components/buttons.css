@@ -4,7 +4,7 @@
   border-radius: 0;
   padding: 16px 24px;
   transition: 0.3s;
-  margin: 16px 16px;
+  margin: 16px 16px 16px 0px;
   display: block;
   width: 30%;
 }
@@ -15,8 +15,12 @@
 }
 
 .btn-transparent:hover {
-  /*color: #000;*/
+  color: #000;
   opacity: 0.4;
+}
+
+.btn-transparent-yellow:hover {
+  color: #FACD49;
 }
 
 .btn-yellow {
