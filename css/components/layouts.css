@@ -8,7 +8,6 @@
 }
 
 
-
 .footer {
   background: #FACD49;
   padding: 24px 0;
@@ -29,6 +28,10 @@
   .grid-container {
     grid-template-columns: auto;
     grid-template-areas: 'click-img' 'click-desc' 'gaptools-img' 'gaptools-desc' 'tnr-img' 'tnr-desc' 'baldo-img' 'baldo-desc' ;
+  }
+
+  .mob-full-width {
+    flex-flow: column;
   }
 }
 
