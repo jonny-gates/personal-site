@@ -33,6 +33,14 @@
   .mob-full-width {
     flex-flow: column;
   }
+
+  .avatar {
+    margin: 24px auto;
+  }
+
+  h2 {
+    text-align: center;
+  }
 }
 
 .youtube {
