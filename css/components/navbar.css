@@ -3,4 +3,10 @@ nav {
   background: #fafafa;
   width: 100%;
   padding: 16px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav a {
+  margin-left: 16px;
 }
