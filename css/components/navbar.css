@@ -11,3 +11,9 @@ nav a {
   margin-left: 16px;
   color: #000;
 }
+
+nav a:hover {
+  color: #000;
+  opacity: 0.5;
+  text-decoration: none;
+}
