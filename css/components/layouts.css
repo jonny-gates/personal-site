@@ -35,6 +35,11 @@
   }
 }
 
+.youtube {
+  width: 100%;
+  min-height: 280px;
+}
+
 .grid-item {
   padding: 16px;
   display: flex;
