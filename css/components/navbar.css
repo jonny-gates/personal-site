@@ -9,11 +9,17 @@ nav {
 
 nav a {
   margin-left: 16px;
+  padding: 8px 16px;
   color: #000;
+  transition: 0.3s;
 }
 
 nav a:hover {
   color: #000;
   opacity: 0.5;
   text-decoration: none;
+}
+
+.active {
+  border-bottom: 3px solid #FACD49;
 }
