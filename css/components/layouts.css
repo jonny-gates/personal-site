@@ -7,6 +7,10 @@
   padding: 24px 0;
 }
 
+.home-bg {
+/*  background: url('../../img/jonny-workshop.jpg');
+  background-size: cover;*/
+}
 
 .footer {
   background: #FACD49;
