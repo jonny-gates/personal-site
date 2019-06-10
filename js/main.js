@@ -1,19 +1,48 @@
-const projects = document.getElementById("projects");
+const projects = {inView: false, element: document.getElementById("projects")};
+const home = {inView: false, element: document.getElementById("home")};
+const about = {inView: false, element: document.getElementById("about")};
+const contact = {inView: false, element: document.getElementById("contact")};
 
+let height = 0;
+let itemLocation = 0;
 
+let currentlyInView;
 
-document.getElementById("projects-btn").addEventListener("click", (event) => {
-  projects.scrollIntoView(true);
-  console.log(document.getElementById("projects-btn"));
-});
+const minusHeight = (number) => {
+  return number - number - number;
+}
 
-function isScrolledIntoView(elem)
-{
-    var docViewTop = $(window).scrollTop();
-    var docViewBottom = docViewTop + $(window).height();
+const checkInView = (element) => {
+  currentLocation = element.getBoundingClientRect().y
+  currentHeight = element.getBoundingClientRect().height
 
-    var elemTop = $(elem).offset().top;
-    var elemBottom = elemTop + $(elem).height();
+  if (currentLocation <= window.innerHeight && currentLocation >= minusHeight(currentHeight) ) {
+    return true
+  }
+  return false
+}
 
-    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+const transitionActive = (from, to) => {
+  if (from != undefined) {
+    from.element.classList.remove('active');
+  }
+  to.element.classList.add('active');
+  currentlyInView = to
+}
+
+window.onscroll = function (e) {
+  projects.inView = checkInView(home.element);
+  home.inView = checkInView(about.element);
+  about.inView = checkInView(projects.element);
+  contact.inView = checkInView(contact.element);
+
+  const items = [projects, home, about, contact];
+
+  items.forEach(function(item) {
+    if (item.inView && item != currentlyInView) {
+      console.log(item);
+      transitionActive(currentlyInView, item);
+    }
+  })
+
 }
