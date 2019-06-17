@@ -24,14 +24,15 @@
 
 .grid-container {
   display: grid;
-  grid-template-columns: auto auto;
-  grid-template-areas: 'click-img click-desc' 'gaptools-desc gaptools-img' 'tnr-img tnr-desc' 'baldo-desc baldo-img';
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 24px;
+  grid-template-areas: 'snapdesk-img snapdesk-desc' 'click-desc click-img' 'gaptools-img gaptools-desc' 'tnr-desc tnr-img' 'baldo-img baldo-desc';
 }
 
 @media ( max-width: 768px) {
   .grid-container {
     grid-template-columns: auto;
-    grid-template-areas: 'click-img' 'click-desc' 'gaptools-img' 'gaptools-desc' 'tnr-img' 'tnr-desc' 'baldo-img' 'baldo-desc' ;
+    grid-template-areas: 'snapdesk-img' 'snapdesk-desc' 'click-img' 'click-desc' 'gaptools-img' 'gaptools-desc' 'tnr-img' 'tnr-desc' 'baldo-img' 'baldo-desc' ;
   }
 
   .mob-full-width {
@@ -69,6 +70,14 @@
   margin: 0 auto;
   object-fit: cover;
  }
+
+.snapdesk-desc {
+  grid-area: snapdesk-desc;
+}
+
+.snapdesk-img {
+  grid-area: snapdesk-img;
+}
 
 .click-desc {
   grid-area: click-desc;
