@@ -35,6 +35,10 @@
     grid-template-areas: 'snapdesk-img' 'snapdesk-desc' 'click-img' 'click-desc' 'gaptools-img' 'gaptools-desc' 'tnr-img' 'tnr-desc' 'baldo-img' 'baldo-desc' ;
   }
 
+  .footer {
+    padding: 12px 0px 34px 0px;
+  }
+
   .mob-full-width {
     flex-flow: column;
   }

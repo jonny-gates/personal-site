@@ -18,3 +18,12 @@
 .social-box a:hover {
   opacity: 0.6;
 }
+
+@media ( max-width: 768px) {
+  .social-box {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    justify-content: center;
+  }
+}
