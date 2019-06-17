@@ -6,6 +6,7 @@
   padding: 8px 24px;
   display: flex;
   justify-content: space-around;
+  z-index: 1;
 }
 
 .social-box a {
