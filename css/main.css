@@ -19,6 +19,9 @@ body {
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
+  position: relative;
+  overflow-y: scroll;
+  height: 100vh;
 }
 
 h1, h2, h3 {

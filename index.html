@@ -17,22 +17,23 @@
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
-    <body>
-      <nav>
+    <body data-spy="scroll" data-target="#scrollspy-nav">
+      <nav id="scrollspy-nav" class="navbar">
         <div class="nav-items">
-          <a href="#home"><i class="fas fa-home"></i></a>
-          <a href="#about"><i class="fas fa-portrait"></i></a>
-          <a href="#projects"><i class="fas fa-briefcase"></i></a>
-          <a href="#contact"><i class="fas fa-phone"></i></a>
+          <ul class="nav">
+            <li class="nav-item"><a href="#home" class="nav-item"><i class="fas fa-home"></i></a></li>
+            <li class="nav-item"><a href="#about" class="nav-item"><i class="fas fa-portrait"></i></a></li>
+            <li class="nav-item"><a href="#projects" class="nav-item"><i class="fas fa-briefcase"></i></a></li>
+            <li class="nav-item"><a href="#contact" class="nav-item"><i class="fas fa-phone"></i></a></li>
+          </ul>
         </div>
       </nav>
       <div class="social-box">
         <a href="https://www.github.com/jonny-gates" target="_blank"><i class="fab fa-github"></i></a>
         <a href="https://www.linkedin.com/in/jonnygates" target="_blank"><i class="fab fa-linkedin"></i></a>
       </div>
-      <div class="full-height d-flex align-items-center home-bg">
-
-        <div id="home" class="container">
+      <div class="full-height d-flex align-items-center home-bg" id="home">
+        <div class="container">
           <h1 class="mb-3">I'm Jonny Gates, a software engineer.</h1>
           <p class="tagline">Full stack developer. Teacher.</p>
           <div class="d-flex mob-full-width">
@@ -68,9 +69,7 @@
 
       <div id="projects" class="jg-section">
         <div class="container">
-
           <h2>Projects</h2>
-
           <div class="grid-container">
             <div class="grid-item-img snapdesk-img" style="background-image:url(img/card-images/snapdesk.png)"></div>
             <div class="grid-item snapdesk-desc">
@@ -126,22 +125,23 @@
 
       <div class="jg-spacer"></div>
 
-      <div class="jg-section" id="contact">
+      <div id="contact" class="jg-section">
         <div class="container">
           <div class="row">
             <div class="col-sm-12">
-              <div class="typeform-widget" data-url="https://jonnygates.typeform.com/to/nwhCEg" data-transparency="100" data-hide-headers=true data-hide-footer=true style="width: 100%; height: 300px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=nwhCEg&utm_source=typeform.com-13231650-Basic&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=EN" style="color: #999" target="_blank">Typeform</a> </div>
+              <div class="typeform-widget" data-url="https://jonnygates.typeform.com/to/nwhCEg" data-transparency="100" data-hide-headers=true data-hide-footer=true style="width: 100%; height: 300px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=nwhCEg&utm_source=typeform.com-13231650-Basic&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=EN" style="color: #999" target="_blank">Typeform</a></div>
              </div>
            </div>
         </div>
       </div>
+
 
       <div class="footer">
         <div class="container">
           <h2>Follow me</h2>
         </div>
       </div>
-    </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
         <script src="js/vendor/bootstrap.min.js"></script>
