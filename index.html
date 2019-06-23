@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
         <link rel="stylesheet" href="css/main.css">
-
+        <script src="https://unpkg.com/scrollreveal"></script>
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
     <body data-spy="scroll" data-target="#scrollspy-nav">
@@ -34,9 +34,9 @@
       </div>
       <div class="full-height d-flex align-items-center home-bg" id="home">
         <div class="container">
-          <h1 class="mb-3">I'm Jonny Gates, a software engineer.</h1>
-          <p class="tagline">Full stack developer. Teacher.</p>
-          <div class="d-flex mob-full-width">
+          <h1 class="mb-3 load-hidden headline">I'm Jonny Gates, a software engineer.</h1>
+          <p class="tagline load-hidden tagline">Full stack developer. <span class="punchline">Teacher.</span></p>
+          <div class="d-flex mob-full-width buttons">
             <a href="#projects" id="projects-btn" class="btn btn-transparent">SEE WHAT I CAN DO</a>
             <a href="#contact" id="contact-btn" class="btn btn-transparent btn-transparent-yellow">GET IN TOUCH</a>
           </div>
@@ -51,9 +51,9 @@
           <h2>About me</h2>
           <div class="row">
             <div class="col-sm-12 col-md-6 d-flex align-items-center">
-              <img src="img/jonny.jpg" alt="Jonny Gates" class="avatar">
+              <img src="img/jonny.jpg" alt="Jonny Gates" class="avatar load-hidden reveal">
             </div>
-            <div class="col-sm-12 col-md-6">
+            <div class="col-sm-12 col-md-6 load-hidden reveal">
               <p>I’m a <strong>full stack Ruby on Rails</strong> developer. Having spent the last <strong>six years</strong> working in software development related roles, I have recently expanded my technical skill set by learning Ruby on Rails, Javascript, HTML 5 & CSS 3 on the coding bootcamp, Le Wagon.<p>
 
               <p>I am <strong>product focussed</strong> having worked previously as a Product Manager and Solutions Architect. I bring management experience having led an IT Operations Team supporting a company delivering training  courses in over 50 countries.</p>
@@ -71,8 +71,8 @@
         <div class="container">
           <h2>Projects</h2>
           <div class="grid-container">
-            <div class="grid-item-img snapdesk-img" style="background-image:url(img/card-images/snapdesk.png)"></div>
-            <div class="grid-item snapdesk-desc">
+            <div class="grid-item-img snapdesk-img reveal" style="background-image:url(img/card-images/snapdesk.png)"></div>
+            <div class="grid-item snapdesk-desc reveal">
               <div>
                 <h3>Snap Desk</h3>
                 <p>Snap Desk encourages interaction in co-working space. Users can book desks and meeting rooms, arrange lunches, host events and tailor their working environment. Snap Desk introduces a virtual currency, Snap Bucks, which allow users to get the most out of their co-working space by being an active member of the community. </p>
@@ -81,8 +81,8 @@
               </div>
             </div>
 
-            <iframe class="youtube click-img" src="https://www.youtube.com/embed/3UnVfzaQdpM?start=325" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <div class="grid-item click-desc">
+            <iframe class="youtube click-img reveal" src="https://www.youtube.com/embed/3UnVfzaQdpM?start=325" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="grid-item click-desc reveal">
               <div>
                 <h3>Clicks!</h3>
                 <p>The goal of Clicks! is to give teachers visibility of their students' progress and allow students to review concepts from their classes in a fun and easy way using flashcards. Check out me presenting our demo on the left  </p>
@@ -90,8 +90,8 @@
               </div>
             </div>
 
-            <div class="grid-item-img gaptools-img" style="background-image:url(img/card-images/rinkl.png)"></div>
-            <div class="grid-item gaptools-desc">
+            <div class="grid-item-img gaptools-img reveal" style="background-image:url(img/card-images/rinkl.png)"></div>
+            <div class="grid-item gaptools-desc reveal">
               <div>
                 <h3>Rinkl</h3>
                 <p>Rinkl has one simple goal. Allowing it's users to get in touch with their favourite social media influencers and recieve a personalised response. It's built in Ruby on Rails. It allows users to send each other video messages and influencers to recieve money for responding to Rinkls using Stripe's Connect API. Currently in closed beta - Rinkl will be released to the public soon. </p>
@@ -99,8 +99,8 @@
               </div>
             </div>
 
-            <div class="grid-item-img tnr-img" style="background-image:url(img/card-images/gaptools.png)"></div>
-            <div class="grid-item tnr-desc">
+            <div class="grid-item-img tnr-img reveal" style="background-image:url(img/card-images/gaptools.png)"></div>
+            <div class="grid-item tnr-desc reveal">
               <div>
                 <h3>GapTools</h3>
                 <p>GapTools is an online negotiation planning tool. GapTools takes advantage of IndexedDB to allow users to continue to work in the browser even without an internet connection. I worked as a Product Manager on this project. </p>
@@ -108,8 +108,8 @@
               </div>
             </div>
 
-            <div class="grid-item-img baldo-img" style="background-image:url(img/card-images/unagi.png)"></div>
-            <div class="grid-item baldo-desc">
+            <div class="grid-item-img baldo-img reveal" style="background-image:url(img/card-images/unagi.png)"></div>
+            <div class="grid-item baldo-desc reveal">
               <div>
                 <h3>Unagi</h3>
                 <p>I built Unagi as a hobby project. Currently in its first iteration, it's a Ruby on Rails app which allows users to create surveys distribute them, and view the results. </p>
@@ -142,10 +142,16 @@
         </div>
       </div>
       <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+      <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
-        <script src="js/vendor/bootstrap.min.js"></script>
-
-        <script src="js/main.js"></script>
+      <script src="js/vendor/bootstrap.min.js"></script>
+      <script src="js/main.js"></script>
+      <script>
+        ScrollReveal().reveal('.reveal', {delay: 300, reset: true});
+        ScrollReveal().reveal('.headline', {delay: 100, duration: 1000});
+        ScrollReveal().reveal('.tagline', {delay: 700, duration: 1000 });
+        ScrollReveal().reveal('.punchline', {delay: 1500, duration: 1000 });
+        ScrollReveal().reveal('.buttons', {delay: 2000, duration: 1000});
+      </script>
     </body>
 </html>
